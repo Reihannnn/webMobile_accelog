@@ -1,0 +1,78 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.log-entry {
+    background: #fff;
+    border-left: 5px solid #2196f3;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.log-entry h4 {
+    margin: 0 0 10px;
+    color: #2196f3;
+}
+
+
+/* warna sesuai dengan status*/
+.status-pickup {
+	border-left: 5px solid #e5e081;
+    background-color: #ffd95b;
+}
+
+.status-berangkat {
+	border-left: 5px solid #71d2ff; 
+    background-color: #007fd9;
+}
+
+.status-tiba_muat {
+    border-left: 5px solid #f0a8a8; 
+    background-color: #ff0000;
+}
+
+.status-muat {
+    border-left: 5px solid #eafaf1; 
+    background-color: #2ecc71;
+}
+
+.status-tiba_tujuan {
+    border-left: 5px solid #ffc57a; 
+     background-color: #ff7700;
+}
+
+.status-mulai_bongkar {
+    border-left: 5px solid #fffb8b; 
+    background-color: #f4f802;
+}
+
+.status-selesai{
+    border-left: 5px solid #89e175; 
+    background-color: #00c621;
+}
+
+.legend-box{
+  padding: 3px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+li{
+  padding: 5px;
+}
+

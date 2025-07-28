@@ -1,0 +1,13 @@
+.ujp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.ujp-table th, .ujp-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.ujp-table th {
+    background: #f5f5f5;
+}

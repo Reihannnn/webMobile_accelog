@@ -1,0 +1,131 @@
+body {
+	font-family: "Segoe UI", sans-serif;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 20px;
+}
+
+.container {
+	max-width: 800px;
+	margin: auto;
+}
+
+.no-order {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.no-order-img {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+.order-list h2 {
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.order-item {
+	background: #fff;
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin-bottom: 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.order-item strong {
+	font-size: 16px;
+	color: #2196f3;
+}
+
+.order-item p {
+	margin: 5px 0;
+	color: #555;
+}
+
+.order-item .btn-detail {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: #2196f3;
+	color: white;
+	padding: 6px 12px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.logout-btn {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 20px;
+	background: #f44336;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.logout-btn:hover {
+	background: #d32f2f;
+}
+
+.order-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		
+}
+
+/* Warna latar atau border berdasarkan status */
+.status-pickup {
+	border-left: 5px solid #e5e081; /* ungu */
+    background-color: #ffd95b;
+}
+
+.status-berangkat {
+	border-left: 5px solid #71d2ff; /* ungu */
+    background-color: #007fd9;
+}
+
+.status-tiba_muat {
+    border-left: 5px solid #f0a8a8; /* ungu */
+    background-color: #ff0000;
+}
+
+.status-muat {
+    border-left: 5px solid #eafaf1; /* hijau */
+    background-color: #2ecc71;
+}
+
+.status-tiba_tujuan {
+    border-left: 5px solid #ffc57a; /* abu-abu */
+    background-color: #ff7700;
+}
+
+.status-mulai_bongkar {
+    border-left: 5px solid #fffb8b; /* abu-abu */
+    background-color: #f4f802;
+}
+
+.status-selesai{
+    border-left: 5px solid #89e175; /* abu-abu */
+    background-color: #00c621;
+}
+
+/* Styling umum untuk order item */
+
+/*
+ALTER TABLE orders
+MODIFY status ENUM(
+  'pickup',
+  'berangkat',
+  'tiba_muat',
+  'muat',
+  'tiba_tujuan',
+  'mulai_bongkar',
+  'selesai'
+) NOT NULL;
+
+*/

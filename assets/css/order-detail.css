@@ -1,0 +1,103 @@
+body {
+	font-family: "Segoe UI", sans-serif;
+	margin: 0;
+	background: #f2f7fb;
+}
+.header {
+	background: #0d6efd;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	position: relative;
+}
+
+.section {
+	margin: 20px;
+	background: #fff;
+	padding: 15px;
+	border-radius: 12px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alamat{
+  margin-top: 8rem;
+}
+.label {
+	font-weight: bold;
+	color: #555;
+}
+.value {
+	margin-bottom: 10px;
+  width: 96.5%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.button {
+	display: block;
+	width: 96%;
+  margin: 0 auto;
+	background: #198754;
+	color: #fff;
+	text-align: center;
+	padding: 12px;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	margin-top: 20px;
+	text-decoration: none;
+}
+.button:hover {
+	background: #157347;
+}
+.map-button {
+	background: #0dcaf0;
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 1rem;
+}
+
+.identitas {
+  background-color: #157347;
+  position: absolute;
+  padding: 0px;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.inner-identitas {
+  width: 45%;
+  margin: auto;
+  padding: 4px;
+}
+
+.inner-identitas > div{
+  display: flex;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 12px;
+  justify-content: space-between;
+  font-size: 1rem
+}
+
+
+
+
+/* reponsive design*/
+@media screen and (max-width: 768px) {
+  .inner-identitas{
+    width: 100%;
+  }
+
+  .identitas{
+    width: 80%;  
+  }
+}
