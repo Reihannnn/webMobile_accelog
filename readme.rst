@@ -69,3 +69,55 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+folder penerapan MVC
+
+├── application/
+│   ├── controllers/      # Otak aplikasi: Menerima request, memanggil Model, memuat View.
+│   │   ├── Auth.php      # Mengelola proses autentikasi (Login, Register, Logout).
+│   │   ├── Dashboard.php # Menampilkan ringkasan utama setelah login.
+│   │   ├── History.php   # Mengelola riwayat aktivitas.
+│   │   ├── Order.php     # Mengelola data dan proses pesanan.
+│   │   ├── Profil.php    # Mengelola data dan pengaturan profil pengguna.
+│   │   ├── Ujp.php       # Mengelola modul 'UJP' (sesuai fungsi spesifik proyek Anda).
+│   │   └── Welcome.php   # Controller default CodeIgniter.
+│   │
+│   ├── models/           # Data & Logika Database: Berinteraksi dengan database.
+│   │   ├── History_model.php # Model untuk data riwayat.
+│   │   ├── Order_model.php   # Model untuk data pesanan.
+│   │   └── User_model.php    # Model untuk data pengguna (termasuk autentikasi).
+│   │
+│   └── views/            # Tampilan UI: Menampilkan data kepada pengguna.
+│       ├── auth/         # Views terkait autentikasi.
+│       │   ├── login_view.php
+│       │   └── register_view.php
+│       ├── dashboard/    # Views untuk halaman dashboard.
+│       │   └── index.php
+│       ├── history/      # Views untuk halaman riwayat.
+│       │   └── index.php
+│       ├── order/        # Views untuk halaman pesanan.
+│       │   └── detail.php
+│       ├── partials/     # Bagian-bagian UI yang digunakan kembali (header, footer).
+│       │   ├── footer.php
+│       │   └── header.php
+│       ├── profile/      # Views untuk halaman profil.
+│       │   └── detail.php
+│       └── ujp/          # Views untuk modul 'UJP'.
+│           └── index.php
+│
+├── public/               # Root publik server web (termasuk aset statis)
+│   └── assets/           # CSS, JavaScript, Gambar, dll.
+│
+└── system/               # Core Framework CodeIgniter (JANGAN DIUBAH!)
+
+
+routes : 
+dahsbord : http://localhost/seleksi_magang/dashboard
+detail-order : http://localhost/seleksi_magang/order/detail/3
+ujb: http://localhost/seleksi_magang/ujp
+history : http://localhost/seleksi_magang/history
+profile : http://localhost/seleksi_magang/profil/detail/1
+
+auth routes 
+login : http://localhost/seleksi_magang/auth/login
+register : http://localhost/seleksi_magang/auth/register
